@@ -1,0 +1,238 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  /* background-color: #ffffff; */
+  background: linear-gradient(180deg,rgb(255, 255, 252),rgba(255, 247, 0, 0.722));
+  overflow-x: hidden;
+}
+.logo{
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  /* background-color: #000; */
+}
+.logo>img{
+  width: 400px;
+  /* border: 1px solid red; */
+}
+
+.main-content{
+  width: 100%;
+  position:relative;
+  top: 0;
+  left: 0;
+  margin: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* gap: 2rem; */
+}
+.content-div{
+  width: 30%;
+  max-height: 700px;
+  /* border: 1px solid red; */
+  padding: 20px;
+}
+.content-div2{
+  width: 70%;
+  /* width: 900px; */
+  padding: 20px;
+
+}
+.content-div1 > img{
+  width: 100%;
+}
+.content-div2>img{
+  width: 100%;
+}
+.content-heading{
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+  /* border: 1px solid red; */
+}
+.tag-line{
+  font-size: 15px;
+}
+.content-list{
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+.achive{
+  width: 100%;
+  padding: 20px;
+  padding-top: 30px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+.pump-img-div{
+  width: 100%;
+  margin: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* padding: 20px; */
+  /* border: 1px solid red; */
+  padding-bottom: 20px;
+}
+.pump-img-div>img{
+  width: 80%;
+  /* border: 1px solid red; */
+}
+.pump-img-div::after{
+  content: '';
+  width: 98%;
+  height: 1px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  /* left: 0; */
+  margin: auto;
+}
+.pump-img-div p{
+  font-size: 16px;
+  padding-top: 10px;
+  font-weight: 600;
+  /* border: 1px solid red; */
+}
+.footer{
+  width: 100%;
+  margin: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  /* border: 1px solid red; */
+}
+.footer-list{
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  font-size:0.9rem;
+  font-weight: 700;
+}
+.footer-heading{
+  text-align: center;
+  font-size: 0.8rem;
+}
+.footer-list>li{
+  /* border: 1px solid red; */
+  border-right: 2px solid rgb(231, 43, 43);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.contact-us-div{
+  width: 99%;
+  height: 100px;
+  background-color: rgb(251, 29, 29);
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: auto;
+  margin-bottom: 8px;
+}
+
+.contact{
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  padding-top: 30px;
+  flex-wrap: wrap;
+
+}
+
+@media screen and (min-width:1400px){
+ .achive{
+  padding-top: 70px;
+  /* color: red; */
+  text-align: center;
+ }
+ .content-list{
+  font-size:1.2rem;
+ }
+ .tag-line{
+  font-size: 1.1rem;
+ }
+}
+@media screen and (max-width:600px) {
+  .main-content{
+      flex-direction: column;
+  }
+  .content-div1{
+      width: 50%;
+      font-size: 15px;
+  }
+  .content-div2{
+      width: 100%;
+      font-size: 15px;
+  }
+  .content-heading{
+      font-size: 16px;
+  }
+  .logo{
+      padding-left: 10px;
+  }
+  .achive{
+      font-size: 13px;
+      padding: 3 0px;
+  }
+  .pump-img-div>p{
+      font-size: 15px;
+      padding: 10px;
+      text-align: center;
+  }
+  .footer-heading{
+      font-size: 10px;
+      text-align: center;
+      padding: 10px;
+  }
+  .footer-list{
+      font-size: 12px;
+      text-align: center;
+      /* word-spacing: 5px; */
+  }
+  .logo>img{
+      width: 300px;
+  }
+  .contact-us-div{
+      overflow: hidden;
+      /* padding: 10px; */
+  }
+  .contact{
+      flex-direction: column;
+      font-size: 15px;
+      gap: 0.5rem;
+  }
+}
